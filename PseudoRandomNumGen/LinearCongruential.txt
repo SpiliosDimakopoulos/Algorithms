@@ -1,0 +1,11 @@
+Algorithm: Linear Congruential Random Generator
+
+LinearCongruential(x) -> r
+  Input: x, a number 0 <= x < m
+  Data: m the modulus, m > 0
+        a the multiplier, 0 < a < m
+        c the increment, 0 < c < m
+  Output: r, a number 0 <= r < m
+
+r <- (a * x + c) mod m
+return r
