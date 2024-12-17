@@ -1,0 +1,12 @@
+Algorithm: xorshift64*.
+
+XORShift64Star(x) -> r
+  Input: x, a 64-bit integer different than 0
+  Output: r, a 64-bit number
+x <- x ^ (x >> 12)
+x <- x ^ (x << 25)
+x <- x ^ (x >> 27)
+r <- x * 2685821657736338717
+return r
+
+Comment: ^ is XOR operator.
