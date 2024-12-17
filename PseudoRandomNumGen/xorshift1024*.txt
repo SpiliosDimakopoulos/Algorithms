@@ -1,0 +1,17 @@
+Algorithm: xorshift1024*.
+
+XORShift1024Star (S) → r
+  Input: S, an array of 16 unsigned 64-bit integers
+  Data: p, a number initially set to 0
+  Output: r, a 64-bit random number
+s0 <- S[p]
+p <- (p + 1) & 15
+s1 <- S[p]
+s1 <- s1 ^ (s1 << 31)
+s1 <- s1 ^ (s1 >> 11)
+s0 <- s0 ^ (so >> 30)
+S[p] <- s0 ^ s1
+r <- S[p] * 1181783497276652981
+return r 
+
+Comment: ^ is XOR operator.
