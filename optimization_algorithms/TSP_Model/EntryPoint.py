@@ -104,7 +104,3 @@ def solve(m):
 m = Model()
 m.BuildModel()
 solve(m)
-
-
-
-
